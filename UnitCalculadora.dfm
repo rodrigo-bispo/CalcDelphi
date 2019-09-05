@@ -17,7 +17,7 @@ object frmCalculadora: TfrmCalculadora
   object Label1: TLabel
     Left = 12
     Top = 12
-    Width = 14
+    Width = 3
     Height = 13
   end
   object edResultado: TEdit

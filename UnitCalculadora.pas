@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, StrUtils;
 
 type
   TfrmCalculadora = class(TForm)
@@ -39,7 +39,7 @@ type
   private
     { Private declarations }
 
-    FOperacao : Char;
+    FOperacao : char;
     FTotal : Double;
     FUltimoNumero : Double;
 
@@ -95,7 +95,9 @@ end;
 
 procedure TfrmCalculadora.btPontoClick(Sender: TObject);
 begin
-  edResultado.Text := edResultado.Text + '.';
+  if NOT ContainsText(edResultado.Text, ',') then
+    edResultado.Text :=  (edResultado.Text) + ',';
+
 end;
 
 procedure TfrmCalculadora.btSomarClick(Sender: TObject);
