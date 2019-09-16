@@ -43,8 +43,10 @@ type
     FTotal : Double;
     FUltimoNumero : Double;
 
+
     procedure Calcular;
     procedure Limpar;
+
 
   public
     { Public declarations }
@@ -85,6 +87,14 @@ begin
   Limpar;
 end;
 
+procedure TfrmCalculadora.btPontoClick(Sender: TObject);
+begin
+  if NOT ContainsText(edResultado.Text, ',') then
+    edResultado.Text :=  (edResultado.Text) + ',';
+
+end;
+
+
 procedure TfrmCalculadora.btMultiplicarClick(Sender: TObject);
 begin
   FUltimoNumero := StrToFloat(edResultado.Text);
@@ -93,15 +103,10 @@ begin
   FOperacao := '*';
 end;
 
-procedure TfrmCalculadora.btPontoClick(Sender: TObject);
-begin
-  if NOT ContainsText(edResultado.Text, ',') then
-    edResultado.Text :=  (edResultado.Text) + ',';
-
-end;
 
 procedure TfrmCalculadora.btSomarClick(Sender: TObject);
 begin
+
   FUltimoNumero := StrToFloat(edResultado.Text);
 
   Calcular;

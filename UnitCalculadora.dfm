@@ -2,9 +2,9 @@ object frmCalculadora: TfrmCalculadora
   Left = 0
   Top = 0
   Caption = 'Calculadora'
-  ClientHeight = 211
-  ClientWidth = 236
-  Color = clBtnFace
+  ClientHeight = 220
+  ClientWidth = 242
+  Color = clActiveCaption
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -21,164 +21,274 @@ object frmCalculadora: TfrmCalculadora
     Height = 13
   end
   object edResultado: TEdit
-    Left = 22
-    Top = 8
-    Width = 207
-    Height = 21
+    Left = 6
+    Top = 7
+    Width = 231
+    Height = 38
     Alignment = taRightJustify
+    AutoSize = False
+    Color = clHighlightText
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
     Text = '0'
   end
   object btLimpar: TButton
-    Left = 10
-    Top = 48
-    Width = 49
-    Height = 25
+    Left = 8
+    Top = 47
+    Width = 59
+    Height = 34
     Caption = 'CE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 1
     OnClick = btLimparClick
   end
   object bt7: TButton
-    Left = 10
-    Top = 79
-    Width = 49
-    Height = 25
+    Left = 8
+    Top = 78
+    Width = 59
+    Height = 34
     Caption = '7'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 2
     OnClick = NumeroClick
   end
   object bt8: TButton
-    Left = 65
-    Top = 79
-    Width = 49
-    Height = 25
+    Left = 63
+    Top = 78
+    Width = 59
+    Height = 34
     Caption = '8'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
     OnClick = NumeroClick
   end
   object bt9: TButton
-    Left = 120
-    Top = 79
-    Width = 49
-    Height = 25
+    Left = 118
+    Top = 78
+    Width = 59
+    Height = 34
     Caption = '9'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 4
     OnClick = NumeroClick
   end
   object btDividir: TButton
-    Left = 175
-    Top = 48
-    Width = 49
-    Height = 25
+    Left = 173
+    Top = 47
+    Width = 59
+    Height = 34
     Caption = '/'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 5
     OnClick = btDividirClick
   end
   object bt4: TButton
-    Left = 10
-    Top = 110
-    Width = 49
-    Height = 25
+    Left = 8
+    Top = 109
+    Width = 59
+    Height = 34
     Caption = '4'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
     OnClick = NumeroClick
   end
   object bt5: TButton
-    Left = 65
-    Top = 110
-    Width = 49
-    Height = 25
+    Left = 63
+    Top = 109
+    Width = 59
+    Height = 34
     Caption = '5'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 7
     OnClick = NumeroClick
   end
   object bt6: TButton
-    Left = 120
-    Top = 110
-    Width = 49
-    Height = 25
+    Left = 118
+    Top = 109
+    Width = 59
+    Height = 34
     Caption = '6'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 8
     OnClick = NumeroClick
   end
   object btMultiplicar: TButton
-    Left = 175
-    Top = 79
-    Width = 49
-    Height = 25
+    Left = 173
+    Top = 78
+    Width = 59
+    Height = 34
     Caption = '*'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 9
     OnClick = btMultiplicarClick
   end
   object bt1: TButton
-    Left = 10
-    Top = 141
-    Width = 49
-    Height = 25
+    Left = 8
+    Top = 140
+    Width = 59
+    Height = 34
     Caption = '1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 10
     OnClick = NumeroClick
   end
   object bt2: TButton
-    Left = 65
-    Top = 141
-    Width = 49
-    Height = 25
+    Left = 63
+    Top = 140
+    Width = 59
+    Height = 34
     Caption = '2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 11
     OnClick = NumeroClick
   end
   object bt3: TButton
-    Left = 120
-    Top = 141
-    Width = 49
-    Height = 25
+    Left = 118
+    Top = 140
+    Width = 59
+    Height = 34
     Caption = '3'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 12
     OnClick = NumeroClick
   end
   object btSubtrair: TButton
-    Left = 175
-    Top = 110
-    Width = 49
-    Height = 25
+    Left = 173
+    Top = 109
+    Width = 59
+    Height = 34
     Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 13
     OnClick = btSubtrairClick
   end
   object bt0: TButton
-    Left = 10
-    Top = 172
-    Width = 104
-    Height = 25
+    Left = 8
+    Top = 171
+    Width = 114
+    Height = 34
     Caption = '0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 14
     OnClick = NumeroClick
   end
   object btPonto: TButton
-    Left = 120
-    Top = 172
-    Width = 49
-    Height = 25
-    Caption = '.'
+    Left = 118
+    Top = 171
+    Width = 59
+    Height = 34
+    Caption = ','
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 15
     OnClick = btPontoClick
   end
   object btIgual: TButton
-    Left = 175
-    Top = 172
-    Width = 49
-    Height = 25
+    Left = 173
+    Top = 171
+    Width = 59
+    Height = 34
     Caption = '='
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 16
     OnClick = btIgualClick
   end
   object btSomar: TButton
-    Left = 175
-    Top = 141
-    Width = 49
-    Height = 25
+    Left = 173
+    Top = 140
+    Width = 59
+    Height = 34
     Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 17
     OnClick = btSomarClick
   end
